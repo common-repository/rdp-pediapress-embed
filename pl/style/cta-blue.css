@@ -1,0 +1,39 @@
+.rdp-ppe-cta-button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rdp-ppe-cta-button.small {
+  font-size: 12px;
+  padding: 4px 20px 4px 20px;
+}
+
+.rdp-ppe-cta-button.medium {
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+}
+
+.rdp-ppe-cta-button.large {
+  font-size: 20px;
+  padding: 14px 26px 14px 26px;
+}
+
+.rdp-ppe-cta-button:hover {
+  background: #2980b9;
+  background-image: -webkit-linear-gradient(top, #2980b9, #3498db);
+  background-image: -moz-linear-gradient(top, #2980b9, #3498db);
+  background-image: -ms-linear-gradient(top, #2980b9, #3498db);
+  background-image: -o-linear-gradient(top, #2980b9, #3498db);
+  background-image: linear-gradient(to bottom, #2980b9, #3498db);
+  text-decoration: none;
+}

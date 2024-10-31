@@ -1,0 +1,39 @@
+.rdp-ppe-cta-button {
+  background: #ededed;
+  background-image: -webkit-linear-gradient(top, #ededed, #dfdfdf);
+  background-image: -moz-linear-gradient(top, #ededed, #dfdfdf);
+  background-image: -ms-linear-gradient(top, #ededed, #dfdfdf);
+  background-image: -o-linear-gradient(top, #ededed, #dfdfdf);
+  background-image: linear-gradient(to bottom, #ededed, #dfdfdf);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rdp-ppe-cta-button.small {
+  font-size: 12px;
+  padding: 4px 20px 4px 20px;
+  }
+
+.rdp-ppe-cta-button.medium {
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+}
+
+.rdp-ppe-cta-button.large {
+  font-size: 20px;
+  padding: 14px 26px 14px 26px;
+}
+
+.rdp-ppe-cta-button:hover {
+  background: #dfdfdf;
+  background-image: -webkit-linear-gradient(top, #dfdfdf, #ededed);
+  background-image: -moz-linear-gradient(top, #dfdfdf, #ededed);
+  background-image: -ms-linear-gradient(top, #dfdfdf, #ededed);
+  background-image: -o-linear-gradient(top, #dfdfdf, #ededed);
+  background-image: linear-gradient(to bottom, #dfdfdf, #ededed);
+  text-decoration: none;
+}

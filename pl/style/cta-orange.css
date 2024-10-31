@@ -1,0 +1,39 @@
+.rdp-ppe-cta-button {
+  background: #ffc477;
+  background-image: -webkit-linear-gradient(top, #ffc477, #fb9e25);
+  background-image: -moz-linear-gradient(top, #ffc477, #fb9e25);
+  background-image: -ms-linear-gradient(top, #ffc477, #fb9e25);
+  background-image: -o-linear-gradient(top, #ffc477, #fb9e25);
+  background-image: linear-gradient(to bottom, #ffc477, #fb9e25);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rdp-ppe-cta-button.small {
+  font-size: 12px;
+  padding: 4px 20px 4px 20px;
+}
+
+.rdp-ppe-cta-button.medium {
+  font-size: 16px;
+  padding: 8px 20px 8px 20px;
+}
+
+.rdp-ppe-cta-button.large {
+  font-size: 20px;
+  padding: 12px 26px 12px 26px;
+}
+
+.rdp-ppe-cta-button:hover {
+  background: #fb9e25;
+  background-image: -webkit-linear-gradient(top, #fb9e25, #ffc477);
+  background-image: -moz-linear-gradient(top, #fb9e25, #ffc477);
+  background-image: -ms-linear-gradient(top, #fb9e25, #ffc477);
+  background-image: -o-linear-gradient(top, #fb9e25, #ffc477);
+  background-image: linear-gradient(to bottom, #fb9e25, #ffc477);
+  text-decoration: none;
+}

@@ -1,0 +1,1645 @@
+#doc {
+    position: relative;
+    min-height: 100%;
+}
+
+#rdp-ppe-main {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#rdp-ppe-main a{cursor: pointer;}
+
+div.rdp_ppe_book_gallery {
+    position: static;
+    padding-left: 0;
+}
+
+#rdp-ppe-main .red {
+    background-color: red;
+}
+
+#rdp-ppe-main .invisible {
+    display: none;
+}
+
+#rdp-ppe-main .clear {
+    clear: both;
+}
+
+#rdp-ppe-main em {
+    font-style: italic;
+}
+
+#rdp-ppe-main strong {
+    font-weight: bold;
+}
+
+#rdp-ppe-main span.error {
+	font-weight: bold;
+	color: #900
+}
+#rdp-ppe-main div.alert {
+	margin-bottom: 15px
+}
+#rdp-ppe-main div.alert,#rdp-ppe-main div.alert.error {
+	background-color: #dd5959;
+	background-repeat: no-repeat;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd5959), color-stop(100%, #c15252));
+	background: -webkit-linear-gradient(top, #dd5959 0%,#c15252 100%);
+	background: -moz-linear-gradient(top, #dd5959 0%,#c15252 100%);
+	background: -o-linear-gradient(top, #dd5959 0%,#c15252 100%);
+	background: linear-gradient(top, #dd5959 0%,#c15252 100%);
+	-webkit-box-shadow: 0 0 0 1px #c15252,0 1px 2px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 0 1px #c15252,0 1px 2px rgba(0,0,0,0.45);
+	box-shadow: 0 0 0 1px #c15252,0 1px 2px rgba(0,0,0,0.45);
+	overflow: hidden;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	padding: 10px 20px 10px 50px;
+}
+#rdp-ppe-main div.alert span,#rdp-ppe-main div.alert.error span {
+        display: inline-block;
+	position: absolute;
+	top: 7px;
+	left: 12px;
+	line-height: 1;
+        background: url(images/notice-icon.png) no-repeat;
+        width: 26px;
+        height: 26px;
+}
+
+#rdp-ppe-main div.alert strong {
+	font-weight: normal
+}
+#rdp-ppe-main div.alert strong.strong,#rdp-ppe-main div.alert b {
+	font-weight: bold
+}
+#rdp-ppe-main div.alert p {
+	margin: 0;
+	font-size: 100%
+}
+#rdp-ppe-main div.alert p+p {
+	margin-top: 5px
+}
+
+#rdp-ppe-main div.alert a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold
+}
+#rdp-ppe-main div.alert a.hover,#rdp-ppe-main div.alert a:hover,#rdp-ppe-main div.alert a.focus,#rdp-ppe-main div.alert a:focus {
+	text-decoration: underline
+}
+#rdp-ppe-main div.alert:hover a {
+	text-decoration: underline
+}
+#rdp-ppe-main div.alert ul {
+	margin: 0 21px 5px 7px
+}
+#rdp-ppe-main div.alert .dismiss,#rdp-ppe-main div.alert #notice-close {
+	color: #fff;
+	background: transparent none;
+	padding: 0 1px 0 0;
+	border: 0;
+	margin: 0;
+	cursor: pointer;
+	text-decoration: none;
+	position: absolute;
+	overflow: hidden;
+	top: 10px;
+	right: 10px;
+	width: 13px;
+	height: 13px;
+	text-indent: 14px;
+	padding: 0
+}
+#rdp-ppe-main div.alert .dismiss:before,#rdp-ppe-main div.alert #notice-close:before {
+	font-family: Verdana,"sans-serif";
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	speak: none;
+	font-size: 13px;
+	color: inherit;
+	content: "X"
+}
+#rdp-ppe-main div.alert .dismiss.hover,
+#rdp-ppe-main div.alert .dismiss:hover,
+#rdp-ppe-main div.alert .dismiss.focus,
+#rdp-ppe-main div.alert .dismiss:focus,
+#rdp-ppe-main div.alert #notice-close.hover,
+#rdp-ppe-main div.alert #notice-close:hover,
+#rdp-ppe-main div.alert #notice-close.focus,
+#rdp-ppe-main div.alert #notice-close:focus {
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.35)
+}
+#rdp-ppe-main div.alert .dismiss:before,#rdp-ppe-main div.alert #notice-close:before {
+	vertical-align: top;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-decoration: none;
+	cursor: pointer
+}
+#rdp-ppe-main div.alert.attention,#rdp-ppe-main div.alert.warning {
+	background-color: #e8a02d;
+	background-repeat: no-repeat;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8a02d), color-stop(100%, #c08d2d));
+	background: -webkit-linear-gradient(top, #e8a02d 0%,#c08d2d 100%);
+	background: -moz-linear-gradient(top, #e8a02d 0%,#c08d2d 100%);
+	background: -o-linear-gradient(top, #e8a02d 0%,#c08d2d 100%);
+	background: linear-gradient(top, #e8a02d 0%,#c08d2d 100%);
+	-webkit-box-shadow: 0 0 0 1px #cb8e2d,0 1px 2px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 0 1px #cb8e2d,0 1px 2px rgba(0,0,0,0.45);
+	box-shadow: 0 0 0 1px #cb8e2d,0 1px 2px rgba(0,0,0,0.45);
+	overflow: hidden;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	padding: 10px 20px 10px 50px;
+}
+#rdp-ppe-main div.alert.attention:before,#rdp-ppe-main div.alert.warning:before {
+	position: absolute;
+	top: 7px;
+	left: 12px;
+	line-height: 1
+}
+#rdp-ppe-main div.alert.success {
+	background-color: #63ae55;
+	background-repeat: no-repeat;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #63ae55), color-stop(100%, #5a994e));
+	background: -webkit-linear-gradient(top, #63ae55 0%,#5a994e 100%);
+	background: -moz-linear-gradient(top, #63ae55 0%,#5a994e 100%);
+	background: -o-linear-gradient(top, #63ae55 0%,#5a994e 100%);
+	background: linear-gradient(top, #63ae55 0%,#5a994e 100%);
+	-webkit-box-shadow: 0 0 0 1px #5b9b4e,0 1px 2px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 0 1px #5b9b4e,0 1px 2px rgba(0,0,0,0.45);
+	box-shadow: 0 0 0 1px #5b9b4e,0 1px 2px rgba(0,0,0,0.45);
+	overflow: hidden;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	padding: 10px 20px 10px 50px;
+}
+#rdp-ppe-main div.alert.success:before {
+	position: absolute;
+	top: 7px;
+	left: 12px;
+	line-height: 1
+}
+#rdp-ppe-main div.alert.notice {
+	background-color: #929292;
+	background-repeat: no-repeat;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #929292), color-stop(100%, #828282));
+	background: -webkit-linear-gradient(top, #929292 0%,#828282 100%);
+	background: -moz-linear-gradient(top, #929292 0%,#828282 100%);
+	background: -o-linear-gradient(top, #929292 0%,#828282 100%);
+	background: linear-gradient(top, #929292 0%,#828282 100%);
+	-webkit-box-shadow: 0 0 0 1px #7e7e7e,0 1px 2px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 0 1px #7e7e7e,0 1px 2px rgba(0,0,0,0.45);
+	box-shadow: 0 0 0 1px #7e7e7e,0 1px 2px rgba(0,0,0,0.45);
+	overflow: hidden;
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	padding: 10px 20px 10px 50px;
+}
+
+#rdp-ppe-main div.alert.notice:before {
+	position: absolute;
+	top: 7px;
+	left: 12px;
+	line-height: 1
+}
+
+#rdp-ppe-main dt {
+    margin-top: 6px;
+}
+
+#rdp-ppe-main ul,#rdp-ppe-main ol {
+    margin: 10px 0;
+}
+
+#rdp-ppe-main ul li {
+    list-style-type: circle;
+    margin-left: 1.2em;
+}
+
+#rdp-ppe-main ol li {
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+
+
+#rdp-ppe-main #smallPrint {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    font-size: 80%;
+    color: rgb(127,130,131);
+}
+
+#rdp-ppe-main #smallPrint a {
+    color: rgb(127,130,131);
+}
+
+
+#rdp-ppe-main .bigger p,#rdp-ppe-main .bigger li {
+    font-size: 110%;
+}
+
+#rdp-ppe-main .bigger h2 {
+    font-size: 130%;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+#rdp-ppe-main .small {
+    font-size: 90%;
+}
+
+
+
+#rdp-ppe-main h1,#rdp-ppe-main h2,#rdp-ppe-main h3 {
+    clear: both;
+    margin: 5px 0;
+}
+
+#rdp-ppe-main h1.underline,#rdp-ppe-main h2.underline,#rdp-ppe-main h3.underline {
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+#rdp-ppe-main .center {
+    text-align: center;
+}
+
+#rdp-ppe-main .errorlist {
+    color: rgb(200,0,0);
+}
+
+#rdp-ppe-main .boundingBox {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#rdp-ppe-main .button {
+    border: 0;
+    background: url(https://pediapress.com/resources/images/button_grey.gif) no-repeat;
+    color: rgb(255,255,255);
+    width: 94px;
+    height: 28px;
+    z-index: 1;
+}
+
+#rdp-ppe-main label,dt,#rdp-ppe-main .greytext,#rdp-ppe-main .label {
+    color: rgb(102,102,102);
+}
+
+#rdp-ppe-main label.required {
+    font-weight: bold;
+}
+
+#rdp-ppe-main #thumbnails {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#rdp-ppe-main #thumbnails img {
+    border: 1px solid rgb(200,200,200);
+    padding: 1px;
+}
+
+#rdp-ppe-main #rdp_ppe_index .usecases img {
+    border: 1px solid #c8c8c8;
+    margin: 0 0 20px 10px;
+    float: right;
+    width: 118px;
+    height: 177px;
+}
+
+#rdp-ppe-main #rdp_ppe_index div.usecase {
+    clear: both;
+    margin-top: 10px;
+}
+
+#rdp-ppe-main #rdp_ppe_index .usecases h2 {
+    margin-top: 0;
+}
+
+#rdp-ppe-main .s0l,#rdp-ppe-main .s0,#rdp-ppe-main .s1l,#rdp-ppe-main .s1,#rdp-ppe-main .s5l,#rdp-ppe-main s5 {
+    float: left;
+    position: relative;
+    zoom: 1;
+}
+
+#rdp-ppe-main .s0l {
+    position: relative;
+    margin-left: 8px;
+}
+
+#rdp-ppe-main.no-cover .s0l {
+    margin-left: 0;
+}
+
+#rdp-ppe-main.no-cover #rdp-ppe-cta-button-box{margin-bottom: 12px;}
+
+#rdp-ppe-main .s0l h1+div{position: absolute; bottom: 0; right: 0; text-align: right; width: 314px;}
+
+#rdp-ppe-main .s0 {
+    margin-left: 10px;
+}
+
+#rdp-ppe-main .s1l {
+    margin-left: 54px;
+}
+
+#rdp-ppe-main .s1 {
+    margin-left: 0;
+}
+
+#rdp-ppe-main .s2l {
+    margin-left: 108px;
+}
+
+#rdp-ppe-main .s2 {
+    margin-left: 118px;
+}
+
+#rdp-ppe-main .s5l {
+    margin-left: 270px;
+}
+
+#rdp-ppe-main .s5 {
+    margin-left: 280px;
+}
+
+#rdp-ppe-main .w1 {
+    width: 44px;
+}
+
+#rdp-ppe-main .w2 {
+    width: 98px;
+}
+
+#rdp-ppe-main .w3 {
+    width: 152px;
+}
+
+#rdp-ppe-main .w4 {
+    width: auto;
+}
+
+#rdp-ppe-main #metadata.w4 {
+    width: 326px;
+}
+
+#rdp-ppe-main .w5 {
+    width: 260px;
+}
+
+#rdp-ppe-main .w6 {
+    width: 314px;
+}
+
+#rdp-ppe-main .w7 {
+    width: 368px;
+}
+
+#rdp-ppe-main .w8 {
+    width: 422px;
+}
+
+#rdp-ppe-main .w9 {
+    width: 476px;
+}
+
+#rdp-ppe-main .wa {
+    width: 530px;
+}
+
+#rdp-ppe-main .wb {
+    width: 584px;
+}
+
+#rdp-ppe-main .wc {
+    width: 638px;
+}
+
+#rdp-ppe-main .wd {
+    width: 692px;
+}
+
+#rdp-ppe-main .we {
+    width: 100%;
+}
+
+#rdp-ppe-main .greyBottom,#rdp-ppe-main .arrowBoxBottom,#rdp-ppe-main .whiteBottom {
+    width: auto;
+    padding: 0;
+    height: 8px;
+    margin-bottom: 10px;
+}
+
+#rdp-ppe-main .invisibleTop,#rdp-ppe-main .greyTop,#rdp-ppe-main .whiteTop {
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+#rdp-ppe-main .noBox {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#rdp-ppe-main .w4 .whiteTop {
+    background: url(https://pediapress.com/resources/images/box_white_206px.png) no-repeat;
+}
+
+#rdp-ppe-main .w4 .whiteBottom {
+    background: url(https://pediapress.com/resources/images/box_white_206px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .w4 .greyTop {
+    background: url(https://pediapress.com/resources/images/box_grey_206px.png) no-repeat;
+}
+
+#rdp-ppe-main .w4 .greyBottom {
+    background: url(https://pediapress.com/resources/images/box_grey_206px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .w6 .whiteTop {
+    background: url(https://pediapress.com/resources/images/box_white_314px.png) no-repeat;
+}
+
+#rdp-ppe-main .w6 .whiteBottom {
+    background: url(https://pediapress.com/resources/images/box_white_314px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .w7 .whiteTop {
+    background: url(https://pediapress.com/resources/images/box_white_368px.png) no-repeat;
+}
+
+#rdp-ppe-main .w7 .whiteBottom {
+    background: url(https://pediapress.com/resources/images/box_white_368px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .w7 .arrowBoxTop {
+    background: url(https://pediapress.com/resources/images/arrowbox_368px.png) no-repeat;
+}
+
+#rdp-ppe-main .w7 .arrowBoxBottom {
+    background: url(https://pediapress.com/resources/images/arrowbox_368px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .w9 .whiteTop {
+    background: url(https://pediapress.com/resources/images/box_white_476px.png) no-repeat;
+}
+
+#rdp-ppe-main .w9 .whiteBottom {
+    background: url(https://pediapress.com/resources/images/box_white_476px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .w9 .greyTop {
+    background: url(https://pediapress.com/resources/images/box_grey_476px.png) no-repeat;
+}
+
+#rdp-ppe-main .w9 .greyBottom {
+    background: url(https://pediapress.com/resources/images/box_grey_476px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .we .whiteTop {
+    background: url(https://pediapress.com/resources/images/box_white_746px.png) no-repeat;
+}
+
+#rdp-ppe-main .we .whiteBottom {
+    background: url(https://pediapress.com/resources/images/box_white_746px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .we .greyTop {
+    background: url(https://pediapress.com/resources/images/box_grey_746px.png) no-repeat;
+}
+
+#rdp-ppe-main .we .greyBottom {
+    background: url(https://pediapress.com/resources/images/box_grey_746px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .we .arrowBoxTop {
+    background: url(https://pediapress.com/resources/images/arrowbox_746px.png) no-repeat;
+}
+
+#rdp-ppe-main .we .arrowBoxBottom {
+    background: url(https://pediapress.com/resources/images/arrowbox_746px.png) no-repeat left bottom;
+}
+
+#rdp-ppe-main .arrowBoxTop,#rdp-ppe-main .invisibleArrowBoxTop {
+    padding: 12px 32px 7px 56px;
+}
+
+#rdp-ppe-main .simpleTable {
+    width: 99%;
+}
+
+#rdp-ppe-main .simpleTable th {
+    text-align: center;
+}
+
+#rdp-ppe-main .simpleTable td {
+    vertical-align: top;
+}
+
+#rdp-ppe-main .simpleTable th,#rdp-ppe-main .simpleTable td {
+    padding: 4px 8px;
+    border: 1px solid rgb(193,193,193);
+}
+
+#rdp-ppe-main .simpleTable .leftTop {
+    background: rgb(230,230,230) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat left top;
+    border-left: 0;
+    border-top: 0;
+}
+
+#rdp-ppe-main .simpleTable .top {
+    background: rgb(230,230,230) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat -60px top;
+    border-top: 0;
+}
+
+#rdp-ppe-main .simpleTable .rightTop {
+    background: rgb(230,230,230) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat right top;
+    border-top: 0;
+    border-right: 0;
+}
+
+#rdp-ppe-main .simpleTable .left {
+    background: rgb(255,255,255) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat left center;
+    border-left: 0;
+}
+
+#rdp-ppe-main .simpleTable .right {
+    background: rgb(255,255,255) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat right center;
+    border-right: 0;
+    text-align: right;
+}
+
+#rdp-ppe-main .simpleTable .leftBottom {
+    background: rgb(230,230,230) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat left bottom;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#rdp-ppe-main .simpleTable .bottom {
+    background: rgb(230,230,230) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat center bottom;
+    border-bottom: 0;
+}
+
+#rdp-ppe-main .simpleTable .rightBottom {
+    background: rgb(230,230,230) url(https://pediapress.com/resources/images/cart_bg.gif) no-repeat right bottom;
+    border-bottom: 0;
+    border-right: 0;
+    text-align: right;
+}
+
+#rdp-ppe-main .ppe-add-to-cart,
+#rdp-ppe-main .rdp-ppe-gallery-add-to-cart-container a{
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7ba9f2), color-stop(1, #04458f) );
+	background:-moz-linear-gradient( center top, #7ba9f2 5%, #04458f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ba9f2', endColorstr='#04458f');
+	background-color:#7ba9f2;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	font-style:normal;
+	height:20px;
+	line-height:20px;
+        padding: 0 15px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+}
+#rdp-ppe-main .ppe-add-to-cart:hover,
+#rdp-ppe-main .rdp-ppe-gallery-add-to-cart-container a:hover {
+    color: #f0f0f0;
+}
+#rdp-ppe-main .ppe-add-to-cart:active,
+#rdp-ppe-main .rdp-ppe-gallery-add-to-cart-container a:active {
+	position:relative;
+	top:1px;
+}
+
+body#errorpage {
+    font-family: Verdana,sans-serif;
+    font-size: 70%;
+    line-height: 1.2em;
+    background-color: rgb(255,255,255);
+    color: rgb(40,30,10);
+    text-align: center;
+    margin-top: 3em;
+}
+
+#errorpage h1 {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.6em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#rdp_ppe_index .noBox {
+    margin-bottom: 30px;
+    padding-right: 16px;
+}
+
+#rdp_ppe_index #wmfLogo {
+    float: right;
+    margin: 5px;
+}
+
+#rdp_ppe_index #testimonial .text {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+#rdp_ppe_index #testimonial .source {
+    white-space: nowrap;
+    font-style: normal;
+}
+
+#rdp_ppe_index #sampleBook {
+    margin-top: 20px;
+    position: relative;
+    padding-top: 16px;
+}
+
+#rdp_ppe_index #sampleBookImage {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    text-align: center;
+}
+
+#rdp_ppe_index #sampleBookText {
+    margin-left: 110px;
+}
+
+#rdp_ppe_index #paymentLogos {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#rdp_ppe_index p {
+    margin-bottom: 10px;
+}
+
+#rdp_ppe_index #socialize img {
+    vertical-align: middle;
+    margin: 0 8px 4px 0;
+}
+
+#rdp_ppe_contact input,#rdp_ppe_contact textarea {
+    width: 100%;
+}
+
+#rdp_ppe_contact #id_send_copy {
+    width: auto;
+}
+
+#rdp_ppe_contact p {
+    margin-top: 8px;
+}
+
+#rdp_ppe_contact #sendButton {
+    float: right;
+    margin-top: 10px;
+    width: 94px;
+}
+
+#rdp_ppe_imprint p {
+    margin-top: 1em;
+}
+
+#rdp_ppe_faq p.q {
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+
+#rdp_ppe_faq h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#rdp_ppe_faq table {
+    border: 1px solid rgb(200,200,200);
+    margin: 20px 10px;
+}
+
+#rdp_ppe_faq th {
+    font-weight: bold;
+    border: 1px solid rgb(200,200,200);
+    background-color: rgb(240,240,240);
+}
+
+#rdp_ppe_faq td,#rdp_ppe_faq th {
+    padding: 2px 4px;
+    border-left: 1px solid rgb(220,220,220);
+    border-right: 1px solid rgb(220,220,220);
+    border-bottom: 1px dotted rgb(240,240,240);
+    vertical-align: top;
+}
+
+#rdp_ppe_faq .right {
+    text-align: right;
+}
+
+#rdp_ppe_about p {
+    margin-bottom: 10px;
+}
+
+#rdp_ppe_testimonials p.testimonial {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 2em;
+}
+
+#rdp_ppe_testimonials .text {
+    font-style: italic;
+}
+
+#rdp_ppe_testimonials .source {
+    font-style: normal;
+    white-space: nowrap;
+}
+
+#rdp_ppe_testimonials .tweet {
+    background: transparent url(http://twitter-badges.s3.amazonaws.com/t_mini-b.png) top right no-repeat;
+}
+
+#rdp_ppe_testimonials .tweet .cover {
+    float: left;
+    margin-right: 8px;
+}
+
+#rdp_ppe_testimonials .tweet .whiteBottom {
+    margin-top: -10px;
+}
+
+#rdp_ppe_testimonials .cover img {
+    border: 1px solid rgb(142,144,145);
+    box-shadow: 2px 2px 2px rgb(162,164,165);
+    -moz-box-shadow: 2px 2px 2px rgb(162,164,165);
+    -webkit-box-shadow: 2px 2px 2px rgb(162,164,165);
+}
+
+#rdp_ppe_press .newsitem {
+    margin-top: 10px;
+}
+
+#feedbackForm input#id_email,#feedbackForm textarea {
+    width: 100%;
+}
+
+#feedbackForm .buttonRow {
+    text-align: right;
+    width: 100%;
+}
+
+#feedbackForm .very_important {
+    display: none;
+}
+
+#book_upload #pleaseWait {
+    text-align: center;
+    color: rgb(28,53,131);
+    margin-top: 30px;
+}
+
+#book_upload #progressBarContainer {
+    background: transparent url(https://pediapress.com/resources/images/upload_progress.png) top left no-repeat;
+    height: 15px;
+    margin: 3px 0 0 0;
+}
+
+#book_upload #progressSpacer {
+    position: absolute;
+    left: 8px;
+    width: 690px;
+    height: 15px;
+}
+
+#book_upload #progressBar {
+    width: 0;
+    height: 15px;
+    background: transparent url(https://pediapress.com/resources/images/upload_progress.png) bottom right no-repeat;
+    z-index: 1;
+}
+
+#book_upload #progressValue {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    font-size: 90%;
+    color: rgb(253,97,38);
+    z-index: 100;
+}
+
+#book_upload #statusText {
+    font-size: 90%;
+    color: rgb(253,97,38);
+}
+
+#book_upload #bookpix {
+    margin-top: 40px;
+}
+
+#book_upload #testimonial {
+    display: none;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#book_upload #testimonial .text {
+    font-style: italic;
+}
+
+#book_upload #testimonial .source {
+    font-style: normal;
+    white-space: nowrap;
+}
+
+#book_setup h1 {
+    font-size: 180%;
+}
+
+#book_setup #yourBooks {
+    color: rgb(100,100,100);
+}
+
+#book_setup #id_current_book {
+    width: 144px;
+}
+
+#book_setup ul.status {
+    list-style: none;
+}
+
+#book_setup ul.status li.info {
+    background: rgb(255,255,255) url(https://pediapress.com/resources/images/icon_ok_info.png) no-repeat 6px 1px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30px;
+}
+
+#book_setup .tabs {
+    height: 26px;
+    padding: 20px 20px 0 30px;
+    width: 470px;
+    margin: 0 0;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+}
+
+#book_setup .tabs li {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    float: left;
+    width: 140px;
+    margin: 0;
+    margin-left: -1px;
+    background-color: #999;
+    border: solid 1px #ccc;
+    position: relative;
+    z-index: 1;
+    list-style-type: none;
+}
+
+#book_setup .tabs li:first-child {
+    margin-left: 0;
+}
+
+#book_setup .tabs li.current {
+    z-index: 3;
+}
+
+#book_setup .tabs li a:link,#book_setup .tabs li a:visited {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    width: 140px;
+    height: 30px;
+    line-height: 26px;
+    font-family: Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: none;
+    float: left;
+    background: -moz-linear-gradient(top center,#999,#666 20%) repeat scroll 0 0 #999;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(.2,#666),color-stop(.8,#999));
+    background: #999;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+}
+
+#book_setup .tabs li a:hover {
+    background-color: #ccc;
+}
+
+#book_setup .tabs li.current a:link,#book_setup .tabs li.current a:visited {
+    cursor: default !important;
+    color: #2B477D !important;
+    -webkit-transition: background-color 0.2s linear;
+    background: -moz-linear-gradient(top center,#d1d1d1,#f2f2f2 80%) repeat scroll 0 0 #f2f2f2;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(.2,#f2f2f2),color-stop(.8,#d1d1d1));
+    background-color: #f2f2f2;
+}
+
+#book_setup ul.tabs:after {
+    display: block;
+    width: 420px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 32px;
+    border: none;
+    background: none;
+    z-index: 2;
+    -webkit-box-shadow: #111 0 -2px 6px;
+    -moz-box-shadow: #111 0 -2px 6px;
+    box-shadow: #111 0 -2px 6px;
+    border-bottom: 1px solid #ccc;
+    content: ' ';
+}
+
+#book_setup .panes .pane {
+    display: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    width: 480px;
+    margin-top: -1px;
+    padding: 20px 0 20px 30px;
+    position: relative;
+}
+
+#book_setup #newbookForm label {
+    color: rgb(56,56,56);
+    font-size: 100%;
+}
+
+#book_setup #id_title,#book_setup #id_subtitle,#book_setup #id_editor {
+    width: 202px;
+    margin: 2px 0 10px 0;
+}
+
+#book_setup #id_title {
+    font-size: 150%;
+}
+
+#book_setup #coverPreviewArea {
+}
+
+#book_setup .coverPreviewArea {
+    padding: 1px 4px 4px 1px;
+}
+
+#book_setup .coverPreviewArea div {
+    padding: 0;
+    margin: 0;
+    width: 240px;
+}
+
+#book_setup .coverImage {
+    -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+#book_setup #booktitle {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+}
+
+#book_setup #pane2link {
+    position: absolute;
+    left: 270px;
+    top: 336px;
+    width: 202px;
+    text-align: right;
+}
+
+#book_setup #cartbox {
+    position: absolute;
+    left: 560px;
+    top: 47px;
+    width: 185px;
+}
+
+#book_setup #color-theme {
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    width: 202px;
+}
+
+#book_setup #theme_chooser,#book_setup #image_chooser {
+    overflow: auto;
+}
+
+#book_setup #color-theme .label,#book_setup #image-choose-text {
+    color: rgb(56,56,56);
+    font-size: 100%;
+}
+
+#book_setup .theme {
+    margin-right: 1px;
+    border: 2px solid #f2f2f2;
+}
+
+#book_setup .theme {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#book_setup #cover_image {
+    margin-top: 20px;
+}
+
+#book_setup #image-choose-text {
+    margin: 0 0 0.5em 0;
+}
+
+#book_setup #image_chooser {
+    margin-left: -2px;
+}
+
+#book_setup #image_chooser .image_preview {
+    border: 2px solid #f2f2f2;
+    margin: 0 2px 2px 0;
+    float: left;
+}
+
+#book_setup #image_chooser .image,#book_setup #image_chooser .image_blank {
+    height: 84px;
+    width: 84px;
+    padding: 0;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+#book_setup .image a {
+    height: 84px;
+    width: 84px;
+    display: block;
+    text-decoration: none;
+    color: rgb(56,56,56);
+}
+
+#book_setup .image IMG {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+#book_setup #theme_chooser .theme.selected,#book_setup #image_chooser .image_preview.selected {
+    border: 2px solid rgb(253,97,38);
+}
+
+#book_setup .theme_preview {
+    width: 29px;
+    height: 44px;
+    border: 1px solid #ddd;
+    background: rgb(255,255,255) url(https://pediapress.com/resources/images/cover_color_preview.png) no-repeat;
+}
+
+#book_setup .theme_nico_0 .theme_preview {
+    background-position: 0px 0px;
+}
+
+#book_setup .theme_nico_2 .theme_preview {
+    background-position: -29px 0px;
+}
+
+#book_setup .theme_nico_3 .theme_preview {
+    background-position: -58px 0px;
+}
+
+#book_setup .theme_nico_4 .theme_preview {
+    background-position: -87px 0px;
+}
+
+#book_setup .theme_nico_5 .theme_preview {
+    background-position: 0px -44px;
+}
+
+#book_setup .theme_nico_6 .theme_preview {
+    background-position: -29px -44px;
+}
+
+#book_setup .theme_nico_7 .theme_preview {
+    background-position: -58px -44px;
+}
+
+#book_setup .theme_nico_8 .theme_preview {
+    background-position: -87px -44px;
+}
+
+#book_setup .theme_nico_9 .theme_preview {
+    background-position: 0px -88px;
+}
+
+#book_setup .theme_nico_10 .theme_preview {
+    background-position: -29px -88px;
+}
+
+#book_setup .theme_nico_11 .theme_preview {
+    background-position: -58px -88px;
+}
+
+#book_setup .theme_nico_12 .theme_preview {
+    background-position: -87px -88px;
+}
+
+#book_setup .theme_nico_13 .theme_preview {
+    background-position: 0px -132px;
+}
+
+#book_setup .theme_nico_15 .theme_preview {
+    background-position: -29px -132px;
+}
+
+#book_setup .theme_nico_16 .theme_preview {
+    background-position: -58px -132px;
+}
+
+#book_setup .theme_nico_17 .theme_preview {
+    background-position: -87px -132px;
+}
+
+#book_setup .theme_nico_18 .theme_preview {
+    background-position: 0px -176px;
+}
+
+#book_setup .theme_nico_19 .theme_preview {
+    background-position: -29px -176px;
+}
+
+#book_setup .theme_nico_20 .theme_preview {
+    background-position: -58px -176px;
+}
+
+#book_setup .theme_nico_21 .theme_preview {
+    background-position: -87px -176px;
+}
+
+#book_setup #survey-trigger .whiteTop {
+    padding-top: 10px;
+    margin-bottom: -5px;
+}
+
+#book_setup #preface_form label {
+    color: rgb(56,56,56);
+    font-size: 100%;
+}
+
+#book_setup #id_preface_title {
+    width: 450px;
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+#book_setup #id_preface_content {
+    width: 450px;
+}
+
+.overlay {
+    display: none;
+    z-index: 10000;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 90px 5px #777;
+    -webkit-box-shadow: 0 0 90px #777;
+    box-shadow: 0 0 90px #777;
+}
+
+.overlay .wrap {
+    z-index: 10001;
+}
+
+.overlay .inner {
+    z-index: 10002;
+}
+
+.overlay .close {
+    background-image: url(https://pediapress.com/resources/images/preview/close.png);
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    z-index: 10100;
+}
+
+#preview-container {
+    width: 396px;
+    height: 612px;
+}
+
+#preview-container .left-page,#preview-container .right-page {
+    position: absolute;
+    top: 0;
+    width: 396px;
+    height: 612px;
+    z-index: 10003;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+}
+
+#preview-container .left-page {
+    display: none;
+    left: 0px;
+}
+
+#preview-container .right-page {
+    right: 0px;
+}
+
+#preview-container .prev-button {
+    position: absolute;
+    display: none;
+    top: 291px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent url(https://pediapress.com/resources/images/preview/prev.png) left top no-repeat;
+    z-index: 10100;
+}
+
+#preview-container .next-button {
+    position: absolute;
+    display: none;
+    top: 291px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent url(https://pediapress.com/resources/images/preview/next.png) right center no-repeat;
+    z-index: 10100;
+}
+
+#preview-container .spine {
+    position: absolute;
+    display: none;
+    left: 381px;
+    top: 0;
+    width: 30px;
+    height: 612px;
+    background: transparent url(https://pediapress.com/resources/images/preview/spine.png) repeat-y;
+    z-index: 10100;
+}
+
+#preview-container .loading {
+    position: absolute;
+    z-index: 10100;
+    left: 166px;
+    top: 274px;
+    width: 64px;
+    height: 64px;
+    background: #000 url(https://pediapress.com/resources/images/preview/spinner.gif) center no-repeat;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius;10px;
+}
+
+#preview-container .error {
+    position: absolute;
+    display: none;
+    z-index: 10100;
+    left: 20px;
+    width: 346px;
+    height: 2em;
+    top: 260px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#rdp-ppe-main.book_show .boundingBox {
+    margin-top: 20px;
+}
+
+#rdp-ppe-main.book_show #metadata #title {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+#rdp-ppe-main.book_show .rdp-ppe-inline-content-sep{padding: 5px 0 5px 106px;font-weight: bold;}
+
+div.rdp_ppe_book_gallery .rdp-ppe-gallery-metadata-container{}
+div.rdp_ppe_book_gallery .rdp-ppe-gallery-inline-content-sep{padding: 0;margin: 3px 0;text-align: center;font-weight: bold;}
+
+#rdp-ppe-main.book_show #metadata p{
+    font-size: 12px;
+    padding: 0;
+    margin: 0 0 3px;
+    line-height: normal;
+}
+
+div.rdp_ppe_book_gallery div.rdp_ppe_gallery_box p.rdp-ppe-cover-image-container
+{
+    float: left;
+    text-align: center;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+#rdp-ppe-main.book_show #metadata p:first-of-type {
+    margin-top: 0;
+}
+
+#rdp-ppe-main.book_show #metadata p:last-of-type {
+    margin-bottom: 8px;
+}
+
+#rdp-ppe-main.book_show #metadata p label{display: block;font-weight: bold;color: #000;}
+
+
+#rdp-ppe-main.book_show #metadata .tag {
+    font-size: 90%;
+}
+
+#rdp-ppe-main.book_show #coverPreviewArea {
+    background: rgb(255,255,255) url(https://pediapress.com/resources/images/cover_shadow_empty.png) no-repeat;
+}
+
+#rdp-ppe-main.book_show #coverPreviewArea {
+    padding: 1px 4px 4px 1px;
+    width: 201px;
+    height: auto;
+}
+
+#rdp-ppe-main.book_show #coverPreviewArea div {
+    padding: 0;
+    margin: 0;
+    width: 201px;
+    height: 311px;
+    text-align: center;
+}
+#rdp-ppe-main.book_show.no-cover #coverPreviewArea{
+    display: none;
+}
+#rdp-ppe-main.book_show div#contentBeneathCover,
+#rdp-ppe-main.book_show div#contentBeneathCover p{
+    height: auto;
+    font-size: .8em;
+    line-height: normal;
+    margin: 6px auro 10px;
+    display: inline-table;
+}
+
+#rdp-ppe-main.book_show #coverPreviewArea div a:hover{cursor: pointer;}
+
+#rdp-ppe-main.book_show li.chapter {
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#rdp-ppe-main.book_show li.article {
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+#rdp-ppe-main.book_show li.custom {
+    list-style-type: none;
+    margin-left: 2em;
+}
+
+#rdp_ppe_add_to_cart_box,#rdp-ppe-cta-button-box{position: relative;margin-bottom: 8px;}
+
+#rdp_ppe_add_to_cart_box.small,#rdp-ppe-cta-button-box.small{height:20px}
+#rdp_ppe_add_to_cart_box.medium,#rdp-ppe-cta-button-box.medium{height:42px}
+#rdp_ppe_add_to_cart_box.large,#rdp-ppe-cta-button-box.large{height:58px}
+
+#rdp-ppe-main .rdp_ppe_add_to_cart,
+#rdp-ppe-main .rdp-ppe-cta-button{
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;   
+}
+
+#book_your_books li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 16px;
+    float: left;
+    width: 333px;
+}
+
+#book_your_books div.cover {
+    float: left;
+    margin-right: 8px;
+}
+
+#book_your_books div.data {
+    margin-left: 68px;
+}
+
+#book_your_books div.title {
+    font-size: 120%;
+}
+
+#book_your_books div.cover img {
+    border: 1px solid rgb(142,144,145);
+    box-shadow: 2px 2px 2px rgb(162,164,165);
+    -moz-box-shadow: 2px 2px 2px rgb(162,164,165);
+    -webkit-box-shadow: 2px 2px 2px rgb(162,164,165);
+}
+
+#category-tree li {
+    list-style-type: none;
+}
+
+#category-tree li.current {
+    font-weight: bold;
+}
+
+#bookList li.book {
+    list-style-type: none;
+    margin-left: 0;
+    padding-bottom: 16px;
+}
+
+#bookList li.book .cover img {
+    float: left;
+    margin-right: 8px;
+    border-left: 1px solid rgb(200,200,200);
+    border-top: 1px solid rgb(200,200,200);
+    border-right: 1px solid rgb(102,104,105);
+    border-bottom: 1px solid rgb(102,104,105);
+}
+
+#bookList li.book .title {
+    font-size: 120%;
+}
+
+li.book-digest {
+    list-style-type: none;
+    margin-left: 0;
+    padding-bottom: 16px;
+}
+
+.book-digest .cover img {
+    float: left;
+    margin-right: 8px;
+    border: 1px solid rgb(142,144,145);
+    box-shadow: 2px 2px 2px rgb(162,164,165);
+    -moz-box-shadow: 2px 2px 2px rgb(162,164,165);
+    -webkit-box-shadow: 2px 2px 2px rgb(162,164,165);
+}
+
+.book-digest .title {
+    font-size: 120%;
+}
+
+#rdp_ppe_inline_content{padding:10px; background:#fff;}
+#rdp_ppe_gallery_footer form{display: inline-block;}
+#rdp_ppe_gallery_footer a.rdp-ppe-gallery-rss{display: inline-block;float: right;}
+#rdp_ppe_inline_content .ui-tabs .ppe-tab iframe,
+#rdp_ppe_gallery_inline_content .ui-tabs .ppe-tab iframe{width: 100%;height:100%;}
+div.rdp-ppe-gallery-row-sep{height: 2px;background: none;margin-top: 10px;}
+div.rdp-ppe-gallery-row-sep.last{margin: 0;}
+div.rdp_ppe_gallery_box{vertical-align: top;display: inline-block;margin-left: 5px;}
+div.rdp_ppe_gallery_col-0{margin-left: 0}
+#rdp-ppe-paging-controls button, 
+#rdp-ppe-paging-controls input[type=button], 
+#rdp-ppe-paging-controls input[type=reset], 
+#rdp-ppe-paging-controls input[type=submit]{
+    padding: 6px 8px;
+    height: auto;
+    font-size: 13px;
+}
+
+#rdp-ppe-paging-controls input[disabled]{cursor: not-allowed;}
+
+
+div.rdp_ppe_book_gallery div.rdp_ppe_gallery_box p{
+    padding: 0;
+    margin: 0 0 3px;
+    line-height: normal;
+}
+
+/*  Small Gallery 
+------------------------------------*/
+div.rdp_ppe_book_gallery_small a.rdp-ppe-cover-link img{
+    width: 100%;
+    max-width: 118px;
+    height: auto;
+}
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-editor-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-editor-container span.rdp-ppe-editor,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-subtitle-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-subtitle-container span.rdp-ppe-subtitle,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-language-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-language-container span.rdp-ppe-language,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-excerpt-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-excerpt-container span.rdp-ppe-excerpt,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-price-currency-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-price-amount-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-book-size-container,
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-book-size-container span.rdp-ppe-book-size{font-size: 11px;}
+div.rdp_ppe_book_gallery_small div.rdp_ppe_gallery_box p.rdp-ppe-title-container{font-size: 13px;font-weight: bold;}
+
+/*  Medium Gallery 
+------------------------------------*/
+div.rdp_ppe_book_gallery_medium a.rdp-ppe-cover-link img{
+    width: 100%;
+    max-width: 174px;
+    height: auto;
+}
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-editor-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-editor-container span.rdp-ppe-editor,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-subtitle-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-subtitle-container span.rdp-ppe-subtitle,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-language-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-language-container span.rdp-ppe-language,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-excerpt-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-excerpt-container span.rdp-ppe-excerpt,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-price-currency-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-price-amount-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-book-size-container,
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-book-size-container span.rdp-ppe-book-size{font-size: 12px;}
+div.rdp_ppe_book_gallery_medium div.rdp_ppe_gallery_box p.rdp-ppe-title-container{font-size: 14px;font-weight: bold;}
+
+/*  Large Gallery 
+------------------------------------*/
+div.rdp_ppe_book_gallery_large a.rdp-ppe-cover-link img{
+    width: 100%;
+    max-width: 201px;
+    height: auto;
+}
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-editor-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-editor-container span.rdp-ppe-editor,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-subtitle-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-subtitle-container span.rdp-ppe-subtitle,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-language-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-language-container span.rdp-ppe-language,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-excerpt-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-excerpt-container span.rdp-ppe-excerpt,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-price-currency-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-price-amount-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-book-size-container,
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-book-size-container span.rdp-ppe-book-size{font-size: 12px;}
+div.rdp_ppe_book_gallery_large div.rdp_ppe_gallery_box p.rdp-ppe-title-container{font-size: 17px;font-weight: bold;}
+
+
+@media only screen and (max-width: 500px) {
+    div.rdp_ppe_gallery_box {
+        display: block;
+        width:100%;
+        margin: 0 0 6px;
+    }
+}
